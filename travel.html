@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 20px;
+      font-size: 15px;
+    }
+    html {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .layar-dalam {
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .layar-penuh {
+      width: 100%;
+    }
+    nav {
+      z-index: 100;
+      color: #fff;
+      text-align: center;
+      position: fixed;
+      border-bottom: 1px solid #b1b1b1;
+      line-height: 60px;
+      width: 100%;
+      transition: background-color 0.5s ease;
+    }
+    nav.putih {
+      background-color: #fff;
+    }
+    nav .logo {
+      float: left;
+      position: relative;
+      line-height: 55px;
+      text-align: left;
+    }
+    nav .logo img {
+      vertical-align: middle;
+      width: 200px;
+      margin-left: 50px;
+    }
+    .bottom {
+      text-align: right;
+      padding: 0 16px;
+      text-decoration: none;
+      background-color: #c86b85;
+      height: 40px;
+      line-height: 42px;
+      color: #fff;
+      display: inline-block;
+      font-size: 15px;
+      border-radius: 4px;
+    }
+    nav .menu {
+      float: right;
+      height: 60px;
+      max-width: 600px;
+    }
+    nav .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav .menu ul li {
+      list-style-type: none;
+      float: right;
+      line-height: 60px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-align: right;
+      text-decoration: none;
+      height: 40px;
+      line-height: 42px;
+      display: inline-block;
+      font-size: 15px;
+      border-radius: 4px;
+      margin-right: 60px;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      z-index: 2;
+    }
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+    }
+    header .intro {
+      z-index: 100;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    header .intro h3 {
+      font-size: 50px;
+      margin: 0;
+      padding: 0;
+    }
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      opacity: 50%;
+      z-index: -1;
+    }
+    .tombol-menu {
+      position: absolute;
+      top: 1.7rem;
+      right: 1rem;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+    }
+    .tombol-menu .garis {
+      height: 3px;
+      background-color: #fff;
+    }
+    nav.putih .tombol-menu .garis {
+      background-color: #333;
+    }
+    nav.putih ul li a {
+      color: #333;
+    }
+    nav .logo img.hitam {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="layar-dalam">
+      <div class="logo">
+        <a href="#"><img src="asset/LOGOTRAV.jpg" class="putih" /></a>
+      </div>
+      <div class="menu">
+        <a href="#" class="tombol-menu">
+          <span class="garis"></span>
+          <span class="garis"></span>
+          <span class="garis"></span>
+        </a>
+      </div>
+    </div>
+    <ul>
+      <li>
+        <a href="#" style="float: right;">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="layar-penuh">
+    <header id="home">
+      <div class="overlay"></div>
+      <video autoplay muted loop>
+        <source src="asset/video-indonesia.mp4" type="video/mp4" />
+      </video>
+      <div class="intro">
+        <h3>Visit Indonesia</h3>
+        <p>
+          <button><a href="das.php" class="bottom">More Info</a></button>
+        </p>
+      </div>
+    </header>
+    <main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="dash.js"></script>
+  </body>
+</html>

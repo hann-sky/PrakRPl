@@ -1,0 +1,146 @@
+/* event.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 280px; /* Increased width */
+    background-color: #ffffff;
+    padding: 25px; /* Increased padding */
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 25px; /* Increased margin */
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 15px; /* Increased padding */
+    border-radius: 10px; /* Slightly larger border radius */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #007bff;
+    background-color: #f0f0f0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 45px; /* Increased padding */
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px; /* Increased margin */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px; /* Increased font size */
+}
+
+.add-event-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 25px 40px; /* Increased padding */
+    border-radius: 7px; /* Slightly larger border radius */
+    cursor: pointer;
+    font-size: 20px; /* Increased font size */
+}
+
+.add-event-button:hover {
+    background-color: #0056b3;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* Increased gap */
+}
+
+.event-card {
+    display: flex;
+    align-items: center;
+    padding: 25px; /* Increased padding */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Slightly larger border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event-card img {
+    width: 110px; /* Increased size */
+    height: 110px; /* Increased size */
+    object-fit: cover;
+    margin-right: 25px; /* Increased margin */
+    border-radius: 10px; /* Slightly larger border radius */
+}
+
+.event-card .event-info {
+    flex-grow: 1;
+}
+
+.event-card .event-info h3 {
+    margin: 0;
+    font-size: 22px; /* Increased font size */
+    color: #333;
+}
+
+.event-card .event-info p {
+    margin: 5px 0;
+    font-size: 18px; /* Increased font size */
+    color: #666;
+}
+
+.event-card .edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 20px 40px; /* Increased padding */
+    border-radius: 7px; /* Slightly larger border radius */
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+}
+
+.event-card .edit-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px; /* Increased padding */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px; /* Increased font size */
+}
